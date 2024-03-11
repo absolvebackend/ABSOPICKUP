@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>_AbsoPickUp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\CardDetails.cs" />
+    <Compile Remove="Models\CardTypes.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NLog" Version="4.7.7" />
+    <PackageReference Include="SendGrid" Version="9.22.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Twilio" Version="5.53.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\LicenceFiles\" />
+    <Folder Include="wwwroot\CCFiles\" />
+    <Folder Include="wwwroot\AgreementFiles\" />
+    <Folder Include="wwwroot\AdminFiles\" />
+    <Folder Include="wwwroot\VATfiles\" />
+    <Folder Include="wwwroot\UserImages\" />
+  </ItemGroup>
+
+</Project>
